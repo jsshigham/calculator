@@ -1,0 +1,87 @@
+.calculator {
+  width: 600px;
+  display: grid;
+  grid-template-rows: repeat(6, 75px);
+  grid-gap: 5px;
+  border-radius: 5px;
+  grid-template-areas:
+    "display display display display"
+    "clear clear multiply divide"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+#displayContainer {
+  grid-area: display;
+  border: 1px black solid;
+  background-color: #c7eefb;
+  border-radius: 5px;
+  text-align: right;
+}
+
+#calc {
+  height: 37px;
+}
+
+.buttons {
+  border-radius: 5px;
+}
+
+#clear {
+  grid-area: clear;
+  background-color: #f1948a;
+}
+#multiply {
+  grid-area: multiply;
+}
+#divide {
+  grid-area: divide;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#subtract {
+  grid-area: subtract;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#add {
+  grid-area: add;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#equals {
+  grid-area: equals;
+  background-color: #58d68d;
+}
+#zero {
+  grid-area: zero;
+}
+#decimal {
+  grid-area: decimal;
+}
